@@ -13,50 +13,7 @@
   <script type="text/javascript" src="assets/js/jstwo.js"></script>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
- <style>
-   .hideme{
-    opacity:0;
-    animation-name: nn;
-   }
-   @keyframes nn { /*淡入動畫*/
-    0% {
-      margin-left: -500px;
-      opacity: 0;
-    }
-    100% {
-      margin-left: 50%;
-      opacity: 1;
-    }
-}
- </style>
 
-  <script>
-$(document).ready(function() {
-    
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-    
-        /* Check the location of each desired element */
-        $('.hideme').each( function(i){
-            
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                
-                $(this).animate({'opacity':'1'},500);
-                    
-            }
-            
-        }); 
-    
-    });
-    
-});
-
-  </script><!--top end-->}
-}
 
 </head>
 <body style="min-width: 1440px;">
