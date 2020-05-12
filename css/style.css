@@ -1,0 +1,648 @@
+
+    body{
+      background: rgb(226, 221, 218);
+    }
+
+    .header{
+      width: 100%;
+      height: auto;
+    }
+    .head{
+      margin-top: 10px;
+      padding-left: 120px;
+      width: 100%;
+    }
+    .footer{
+      position: relative;
+      background: rgb(195, 175, 162);
+      width: 100%;
+      height:150px;
+    }
+    .tabone{
+      position: absolute;left: 620px;top: 78px;
+    }
+    .tabtwo{
+      position: absolute;left: 760px;top: 78px;
+    }
+    .tabthree{
+      position: absolute;left: 928px;top: 78px;
+    }
+    .tabfour{
+      position: absolute;left: 1035px;top: 78px;
+    }
+    .tabfive{
+      position: absolute;left: 1215px;top: 79px;
+    }
+    .tabsix{
+      position: absolute;left: 1395px;top: 78px;
+
+    }
+    .tabseven{
+      position: absolute;top: 78px;left: 1560px;
+    }
+    .gotop{
+      position:fixed;
+      z-index:200;
+      right:40px;
+      bottom:190px;
+      width:50px;
+      height:50px;
+      line-height:50px;
+      transition:all 5s;
+    }
+    .aboutme{
+      columns: 2; 
+      column-rule: #8f8681 dashed 3.5px;
+      column-width:500px;
+      text-align: center;
+      position: relative; top: 20px;
+      margin-left: 80px;
+      border-radius: 40px;
+      background: rgb(254, 251, 251,0.6);
+      width: 1700px;
+      height: 800px;
+      padding-top: 40px;
+      transition: all 0.5s ease;
+    }
+    .aboutme:hover{
+      background: rgb(232, 198, 181,0.1);
+    }
+    .aboutarea{
+      border-radius: 40px;
+      /*background: yellow;*/
+      width: 100%;
+      height: 1090px;
+    }
+    .aboutme:hover .fb{
+      animation: wobble-vertical-on-hover 1s infinite alternate;
+    }
+    .aboutme:hover .ig{
+      animation: wobble-vertical-on-hover 1s infinite alternate;
+    }   
+@keyframes wobble-vertical-on-hover {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+    }
+    .abtitle{
+      padding-left: 100px;
+      height: auto;
+      /*background: red;*/
+    }
+    .aboutpic{
+      padding-left: 3vw;
+    }
+    .schoolicon{
+      position: relative;top: 45px;
+      padding-left: 230px;
+    }
+    .schoolarea{
+      width: 100%;
+      height: 1000px;
+    }
+    .schooltitle{
+      padding-left: 760px;
+      margin-top: 50px;
+    }
+    .schoolrow{
+      position: relative;top: 80px;
+      margin-left: 212.5px;
+    }
+    .schoolword{
+      position: relative;top: 100px;
+      margin-left: 300px;
+      height: auto;
+    }
+    .faceone { 
+      position: relative;
+      
+    } 
+    .f{
+      animation: fright 1s infinite alternate;
+    }
+    @keyframes fright {
+      from {
+        transform: scale(1,0.8);
+
+      }
+      to {
+        transform: scale(1,1.1);
+      }
+    }
+    .clubpull{
+      animation: wobble 1s infinite alternate;
+    }
+    @keyframes wobble {
+   0% { transform: translateX(0%); } 
+   15% { transform: translateX(-10%) rotate(-5deg); } 
+   30% { transform: translateX(15%) rotate(3deg); } 
+   45% { transform: translateX(-15%) rotate(-3deg); } 
+   60% { transform: translateX(10%) rotate(2deg); }
+   75% { transform: translateX(-5%) rotate(-1deg); }
+   100% { transform: translateX(0%); } 
+} 
+    .facetwo { 
+      position: relative;left:270px;
+    }
+    .facethree { 
+      position: relative;left:500px;
+    } 
+   .facefour { 
+      position: relative;left:760px;
+    } 
+    .wordone{
+      position: absolute;
+      color: #7B706B;
+    }
+    .wordtwo{
+      position: absolute;left: 430px;
+      color: #7B706B;
+    }
+    .wordthree{
+      position: absolute;left: 840px;
+      color: #7B706B;
+    }
+    .wordfour{
+      position: absolute;left: 1250px;
+      color: #7B706B;
+    }
+    .schooloo{
+      margin-top: 6vh;
+      margin-left: 37vw;
+      z-index: 99;
+      border-radius: 60px;
+    }
+    .aboutoo{
+      margin-top: 42px;
+      margin-left: 35vw;
+      z-index: 99;
+      border-radius: 60px;
+    }
+    .ig{
+      z-index: 100;
+      position: absolute;top:555px;left: 355px;
+    }
+    .igword{
+      z-index: 100;
+      position: absolute;top:635px;left: 352px;
+      font-family: Comic Sans MS;
+      font-weight: bold;
+      color: #32435f;
+      font-size: 13pt;
+    }
+    .fb{
+      z-index: 100;
+      position: absolute;top:555px;left: 500px;
+    }
+    .fbword{
+      z-index: 100;
+      position: absolute;top:635px;left: 500px;
+      font-family: Comic Sans MS;
+      font-weight: bold;
+      color: #32435f;
+      font-size: 13pt;
+    }
+    .aboutword{
+      text-align: left;
+      font-family: 微軟正黑體;
+      font-size: 20pt;
+      font-weight: bold;
+      position: relative;top:90px;left: 120px;
+    }
+    .a{
+      color: #8f8681
+    }
+    .a:hover{
+      color: #e1dcd9;
+      text-decoration:none;
+    }
+    .hobbitarea{
+      margin-top: 80px;
+      width: 100%;
+      height: 1000px;
+    }
+    .hobbyt{
+      width: 100%
+      height:auto;
+    }
+    .hobbytitle{
+      margin-left: 850px;
+    }
+    .hobbit{
+      border-radius: 40px;
+      background: rgb(244, 244, 250,0.5);
+      width: 1700px;
+      height: 800px;
+      padding-top: 30px;
+      margin-left: 100px;
+    }
+
+    .hobbitone{
+      position: relative;top: 50px;
+    }
+    .hobbittwo{
+      position: relative;top: 40px;
+    }
+    .hobbitthree{
+      position: relative;top: 40px;
+    }
+    .clubarea{
+      width:100%;
+      height: 1900px;
+      margin-top: 30px;
+      position: relative;
+      }
+    .clubtitle{
+      position: relative;
+      padding-left: 790px;
+      padding-top: 20px;
+    }
+    .clubword{
+      position: relative;
+      font-family: 微軟正黑體;
+      font-size: 20pt;
+      text-align: center;
+    }
+    .clubpic{
+      position: relative;
+      padding-left: 150px;
+      margin-top: 30px;
+
+    }
+    .fr{
+      position: relative;
+    }
+    .clubpull{
+      border-radius: 15px;
+      cursor: pointer;
+    }
+    .picalll{
+      display: none;
+      margin:10px;
+      float: left; 
+    }
+    .picone{
+      width: 500px;
+      height: 580px;
+    }
+    .pictwoo{
+      position: relative;top: -215px;
+    }
+    .picthreee{
+      width: 700px;
+      height: 800px;
+    }
+    .banner{
+      margin-top: 20px;
+      width: 100%;
+      height: 850px;
+    }
+    .babg{
+      position: absolute;
+      margin-left: 80px;
+      margin-right: 80px;
+      border-radius: 45px;
+      width: 1750px;
+    }
+    .bapic{
+      position: absolute;top: 294px;left: 1250px;
+    }
+    .bapictwo{
+      position: absolute;top: 294px;left: 20px;
+    }
+    .batitlee{
+      z-index: 100;
+      position: absolute;left:500px;
+    }
+    img.batitlee{
+      animation: frigh 0.9s infinite step-start;
+    }
+    @keyframes frigh {
+      0%{transform:rotate(0deg); }
+      25%{transform:rotate(-3deg);}
+      75%{transform:rotate(0deg);}
+      100%{transform:rotate(3deg);}
+    }
+    .work{
+      position: relative;top:0px;
+      width: 100%
+      height:1800px;
+      padding-left: 100px;
+
+    }
+    .worktitle{
+      position: relative;
+      padding-left: 650px;
+      margin-bottom: 40px;
+      height: 200px;
+
+    }
+    .exp{
+      position: relative;
+      border-radius: 40px;
+      background: rgb(244, 244, 250,0.5);
+      height: 400px;
+      width: 1000px;
+      text-align: center;
+      font-family: 微軟正黑體;
+      font-size: 20pt;
+      padding-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    .goa{
+      position: relative;
+      border-radius: 40px;
+      background: rgb(244, 244, 250,0.5);
+      height: 350px;
+      width: 1000px;
+      text-align: left;
+      font-family: 微軟正黑體;
+      padding-top: 120px;
+      padding-left: 80px;
+      font-size: 20pt;
+      cursor: pointer;
+
+    }
+    .wis{
+      margin-top: 45px;
+      padding-top: 50px;
+      position: absolute;top: 190px;left: 1150px;
+      border-radius: 40px;
+      background: rgb(244, 244, 250,0.5);
+      height: 780px;
+      width: 650px;
+      font-family: 微軟正黑體;
+      font-size: 20pt;
+      text-align: center;
+    }
+    .workbg{
+      position: relative;
+      background: white;
+      height: 400px;
+    }
+    #fade{
+      animation: word 1s infinite alternate;
+    }
+    @keyframes word {
+      from {
+        transform: scale(1,0.8);
+      }
+      to {
+        transform: scale(1,1.1);
+        color: red;
+        font-weight: bold;
+      }
+    }
+    .sss{
+      display: none;  /* 平常設定不要顯示 */
+     }
+    .goa:hover .sss{
+      animation:show 0.4s ease-in; 
+      display: inline;  /* 當滑鼠移至該篇文章時，設定以block顯示，可設定超連結以一個區塊顯示 */
+      position: absolute;top: 2vh;left: 14vw;
+      cursor: pointer;
+    }
+    @keyframes show 
+    {
+      0% {opacity:0;}
+      100% {opacity:1;}
+    }
+   .hideme{
+    opacity:0;
+    animation-name: nn;
+   }
+   @keyframes nn { /*淡入動畫*/
+    0% {
+      margin-left: -500px;
+      opacity: 0;
+    }
+    100% {
+      margin-left: 50%;
+      opacity: 1;
+    }
+}
+    .baword{
+      cursor: pointer;
+      display: none;
+      width: 400px;
+    }
+    .hi:hover .baword{
+      z-index: 250;
+      display: block;
+      position: relative;top: 50px;
+      margin-left: 1150px;
+      width: 400px;
+    }
+    .wipic{
+      position: relative;
+      margin-top: 30px;
+      border-radius: 50px;
+
+    }
+    .lifearea{
+      width: 100%;
+      height: 1200px;
+      position: relative;
+      margin-top: 180px;
+      padding: 0px;
+      padding-left: 120px;
+    }
+    .lifetitle{
+      width: 100%;
+      height:170px;
+      /*background: red;*/
+    }
+    .lifepicbg{
+      background: gray;
+      padding:0px;
+    }
+    .picall{
+      margin:10px;
+      float: left; 
+    }
+    .pulse_animation:hover{
+      animation: pulse-shrink-on-hover 1s infinite ;
+    }
+@-webkit-keyframes pulse-shrink-on-hover {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+    .lifepicbgtwo{
+      width: 440px;
+      height: 500px;
+    }
+      @-webkit-keyframes buzz-out-on-hover {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@keyframes buzz-out-on-hover {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+.buzz-out-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.buzz-out-on-hover:hover, .buzz-out-on-hover:focus, .buzz-out-on-hover:active {
+  -webkit-animation-name: buzz-out-on-hover;
+  animation-name: buzz-out-on-hover;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+.hvr-pulse-grow {
+
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+    -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+ .clubmask{
+      position: absolute;left: -3px;    
+      width: 100%;
+      height: 1000px;
+      z-index: -1;
+    }
+  .f:hover {
+    animation: shake 0.6s; 
+    animation-iteration-count: infinite; 
+  }
+@keyframes shake {
+  0% { transform: translate(2px, 2px) rotate(0deg); }
+  10% { transform: translate(-2px, -4px) rotate(-1deg); }
+  20% { transform: translate(-5px, 1px) rotate(1deg); }
+  30% { transform: translate(5px, 2px) rotate(0deg); }
+  40% { transform: translate(3px, -3px) rotate(1deg); }
+  50% { transform: translate(-2px, 5px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(8px, -3px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(5px, 9px) rotate(0deg); }
+  100% { transform: translate(5px, -8px) rotate(-1deg); }
+}
