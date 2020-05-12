@@ -430,7 +430,20 @@
       0% {opacity:0;}
       100% {opacity:1;}
     }
-
+   .hideme{
+    opacity:0;
+    animation-name: nn;
+   }
+   @keyframes nn { /*淡入動畫*/
+    0% {
+      margin-left: -500px;
+      opacity: 0;
+    }
+    100% {
+      margin-left: 50%;
+      opacity: 1;
+    }
+}
     .baword{
       cursor: pointer;
       display: none;
