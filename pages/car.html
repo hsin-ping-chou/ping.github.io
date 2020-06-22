@@ -14,6 +14,8 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/loginre.css"/>
     <link rel="stylesheet" type="text/css" href="../assets/css/mem.css"/>
     <script type="text/javascript" src="../assets/js/loginre.js"></script>
+      <script type="text/javascript" src="../assets/js/pwd.js"></script>
+    
 </head>
 <body>
 <div id="id_wrapper">
@@ -43,7 +45,7 @@
   </div>
   <!--LOGIN子遮罩-->
 
-  <!--Registered子遮罩-->
+ <!--Registered子遮罩-->
   <div id="main">
     <div id="fullbg"></div>
     <div id="dialog2">
@@ -52,14 +54,14 @@
       </p>
       <div class="tableinner">
         <div class="retitle">Registered</div>
-        <form>
+        <form action="#">
           <div class="reinput">
             <input id="name-re" type="mail" name="namere" required="required" placeholder="Name..."/><br><br>
             <input id="bir-re" type="date" name="birre" required="required" placeholder="1999-12-04"/><br><br>
             <input id="tel-re" type="tel" name="telre" required="required" placeholder="tel...."/><br><br>
-            <input id="email-re" type="mail" name="emailre" required="required" placeholder="Email Address..."/><br><br>
-            <input id="password-re" type="password" name="passwordre" required="required" placeholder="Password..."/><br><br>
-            <input id="password-re2" type="password" name="passwordre2" required="required" placeholder="Verify password..."/>
+            <input id="email-re" type="mail" name="emailre"  required="required" placeholder="Email Address..."/><br><br>
+            <input id="password-re" type="password" name="passwordre" required="required" onkeyup="validate()" placeholder="Password..."/><br><br>
+            <input id="password-re2" type="password" name="passwordre2" required="required"  onkeyup="validate()" placeholder="Verify password..."/><span id="tishi"></span>
           </div>
           <div class="joinn">
              <a class="jn" rel="external nofollow"  onclick="closeB();" href="#">Login</a>
@@ -69,7 +71,7 @@
               <input type="reset" value="Rewrite" name="re-write"/>
             </div>
             <div class="res">
-              <input type="submit" value="Registered" name="re-submit">
+              <input id="button" type="submit" value="Registered" name="re-submit">
             </div>
            </div>
         </form>
@@ -77,7 +79,9 @@
     </div>
   </div>
   <!--Registered子遮罩-->
+
   <!--revise personal info子遮罩-->
+  <div id="main">
     <div id="fullbg"></div>
     <div id="dialog3">
       <p class="close">
@@ -85,27 +89,31 @@
       </p>
       <div class="tableinner">
         <div class="retitle" style="text-align: center;">Revise personal Info</div>
-        <form>
+        <form action="#">
+
           <div class="moinput">
             <input id="name-mo" type="mail" name="namemo" required="required" placeholder="Name..."/><br><br>
             <input id="bir-mo" type="date" name="birmo" required="required" placeholder="1999-12-04"/><br><br>
-            <input id="tel-mo" type="tel" name="telmo" required="required" placeholder="tel...."/><br><br>
+            <input id="tel-mo" type="tel" name="telmo"  required="required" placeholder="tel...."/><br><br>
             <input id="email-mo" type="mail" name="emailmo" required="required" placeholder="Email Address..."/><br><br>
-            <input id="password-mo" type="password" name="passwordmo" required="required" placeholder="Password..."/><br><br>
-            <input id="password-mo2" type="password" name="passwordmo2" required="required" placeholder="Verify password..."/>
+            <input id="password-mo" type="password" name="passwordmo" onkeyup="validate2()" required="required" placeholder="Password..."/><br><br>
+            <input id="password-mo2" type="password" name="passwordmo2" onkeyup="validate2()" required="required"  placeholder="Verify password..."/>
+            <span id="tishii"></span>
           </div>
           <div class="bu">
             <div class="sub">
               <input type="reset" value="Rewrite" name="re-write"/>
             </div>
             <div class="res">
-              <input type="submit" value="Revise" name="re-submit">
+              <input id="buttonn" type="submit" value="Revise" name="re-submit">
             </div>
            </div>
         </form>
       </div>
     </div>
+  </div>
   <!--revise personal info子遮罩-->
+
 
  <div class="topcate">
     <div class="centerareaone">

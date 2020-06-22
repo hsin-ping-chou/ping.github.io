@@ -13,23 +13,9 @@
   <link rel="stylesheet" type="text/css" href="assets/css/mem.css"/>
   <script type="text/javascript" src="assets/js/wow.min.js"></script>
   <script type="text/javascript" src="assets/js/loginre.js"></script>
+    <script type="text/javascript" src="assets/js/pwd.js"></script>
 </head>
-<script>
-  function validate() {
-    var pwd1 = document.getElementById("password-re").value;
-    var pwd2 = document.getElementById("password-re2").value;
 
-    if(pwd1 == pwd2)
-    {
-      document.getElementById("tishi").innerHTML="<center><font color='green' font-size='8pt'>Password input is consistent</font></center>";
-      document.getElementById("button").disabled = false;
-    }
-    else {
-      document.getElementById("tishi").innerHTML="<center><font color='red'>Password input is inconsistent</font></center>";
-      document.getElementById("button").disabled = true;
-    }
-  }
-</script>
 
 <body> 
 <div id="id_wrapper">
@@ -104,20 +90,22 @@
       <div class="tableinner">
         <div class="retitle" style="text-align: center;">Revise personal Info</div>
         <form action="#">
+
           <div class="moinput">
             <input id="name-mo" type="mail" name="namemo" required="required" placeholder="Name..."/><br><br>
             <input id="bir-mo" type="date" name="birmo" required="required" placeholder="1999-12-04"/><br><br>
             <input id="tel-mo" type="tel" name="telmo"  required="required" placeholder="tel...."/><br><br>
             <input id="email-mo" type="mail" name="emailmo" required="required" placeholder="Email Address..."/><br><br>
-            <input id="password-mo" type="password" name="passwordmo" required="required" placeholder="Password..."/><br><br>
-            <input id="password-mo2" type="password" name="passwordmo2" required="required"  placeholder="Verify password..."/>
+            <input id="password-mo" type="password" name="passwordmo" onkeyup="validate2()" required="required" placeholder="Password..."/><br><br>
+            <input id="password-mo2" type="password" name="passwordmo2" onkeyup="validate2()" required="required"  placeholder="Verify password..."/>
+            <span id="tishii"></span>
           </div>
           <div class="bu">
             <div class="sub">
               <input type="reset" value="Rewrite" name="re-write"/>
             </div>
             <div class="res">
-              <input type="submit" value="Revise" name="re-submit">
+              <input id="buttonn" type="submit" value="Revise" name="re-submit">
             </div>
            </div>
         </form>
